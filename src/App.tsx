@@ -15,9 +15,9 @@ const queryClient = new QueryClient();
 const App = () => (
   <AppProvider>
     <QueryClientProvider client={queryClient}>
-      <div className="d-flex flex-column min-dvh-100">
+      <div className="prime-catalog d-flex flex-column min-dvh-100">
         <CatalogHeader />
-        <main className="d-flex flex-column flex-grow-1">
+        <main id="main" tabIndex={-1} className="d-flex flex-column flex-grow-1">
           <Routes>
             <Route path={ROUTES.HOME} element={<HomePage />} />
             <Route path={ROUTES.COURSES} element={<CatalogPage />} />
@@ -25,7 +25,7 @@ const App = () => (
             <Route path={ROUTES.NOT_FOUND} element={<NotFoundPage />} />
           </Routes>
         </main>
-        <FooterSlot />
+        <div className="prime-footer"><FooterSlot /></div>
       </div>
     </QueryClientProvider>
   </AppProvider>

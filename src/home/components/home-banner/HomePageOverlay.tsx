@@ -1,18 +1,17 @@
 import { useIntl } from '@edx/frontend-platform/i18n';
-import { getConfig } from '@edx/frontend-platform';
 
 import messages from './messages';
 
 const HomePageOverlay = () => {
   const intl = useIntl();
-  const { SITE_NAME } = getConfig();
 
   return (
     <>
-      <h1 className="display-1 text-white text-center">
-        {intl.formatMessage(messages.title, { siteName: SITE_NAME })}
+      <p className="prime-wordmark">PRiME III</p>
+      <h1 className="prime-hero-title">
+        {intl.formatMessage(messages.title)}
       </h1>
-      <p className="lead text-white text-center mb-3">
+      <p className="prime-hero-description">
         {intl.formatMessage(messages.subtitle)}
       </p>
     </>

@@ -194,3 +194,17 @@ file in this repo.
 ## Reporting Security Issues
 
 Please do not report security issues in public, and email security@openedx.org instead.
+
+### PRiME III visual theme
+
+The catalog uses the palette, Sora and IBM Plex Sans fonts, logo, and static hero
+illustration from `../prime-landing-page`. Assets are bundled locally; the sibling
+project is not needed to build or run this MFE. Theme overrides live in
+`src/assets/scss/_prime.scss`, scoped to `.prime-catalog`. The mosaic SVG is a
+static composition of the landing page’s six original illustration tiles.
+
+The shared Open edX header and footer, authentication links, account menu,
+course discovery flags, plugin slots, and enrollment actions remain in use.
+Configure `SITE_NAME` as `PRiME III` in the deployment’s MFE configuration for
+matching browser titles and platform-provided text. Login and registration pages
+are owned by the authentication MFE and are not styled by this catalog theme.

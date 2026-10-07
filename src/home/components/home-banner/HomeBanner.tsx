@@ -3,12 +3,14 @@ import { useNavigate } from 'react-router';
 import { getConfig } from '@edx/frontend-platform';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import {
-  Form, useToggle, SearchField, Container,
+  Form, useToggle, SearchField,
 } from '@openedx/paragon';
 
 import { ROUTES } from '@src/routes';
 import HomeOverlayHtmlSlot from '@src/plugin-slots/HomeOverlayHtmlSlot';
 import { HomePromoVideoButtonSlot, HomePromoVideoModalSlot } from '@src/plugin-slots/HomePromoVideoSlots';
+
+import primeMosaic from '@src/assets/images/prime-mosaic.svg';
 
 import messages from './messages';
 
@@ -34,15 +36,16 @@ const HomeBanner = () => {
 
   return (
     <section
-      className="home-banner d-flex justify-content-center align-items-center position-relative overflow-hidden"
+      className="home-banner position-relative overflow-hidden"
       data-testid="home-banner"
     >
-      <div className="animation-wrapper d-flex justify-content-center align-items-center flex-column p-4 my-5">
-        <HomeOverlayHtmlSlot />
-        <HomePromoVideoButtonSlot onClick={open} />
-        <Container size="sm">
+      <div className="prime-hero-layout">
+        <div className="prime-hero-copy">
+          <HomeOverlayHtmlSlot />
+          <HomePromoVideoButtonSlot onClick={open} />
           {searchField}
-        </Container>
+        </div>
+        <img className="prime-hero-art" src={primeMosaic} alt="" aria-hidden="true" />
       </div>
       <HomePromoVideoModalSlot
         isOpen={isOpen}

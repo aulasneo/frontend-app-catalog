@@ -6,10 +6,12 @@ const CatalogHeader = () => {
   const { mainMenu, secondaryMenu } = useMenuItems();
 
   return (
-    <Header
-      mainMenuItems={mainMenu}
-      secondaryMenuItems={secondaryMenu}
-    />
+    <div className="prime-header">
+      <Header
+        mainMenuItems={mainMenu}
+        secondaryMenuItems={secondaryMenu}
+      />
+    </div>
   );
 };
 
