@@ -1,0 +1,47 @@
+src/index.tsx
+  s_cbb8dc8580692e::t_7c9ebc13f1f1e3 5,12-13,21-22
+src/assets/images/prime-mosaic.svg
+  s_cbb8dc8580692e::t_721acd13152f18 1-18
+src/header/CatalogHeader.tsx
+  s_cbb8dc8580692e::t_721acd13152f18 9-10,13-14
+  s_cbb8dc8580692e::t_81bfd0082f3359 11-12
+src/home/components/home-banner/messages.ts
+  s_cbb8dc8580692e::t_721acd13152f18 5-6,10-11
+src/home/components/home-banner/HomeBanner.tsx
+  s_cbb8dc8580692e::t_81bfd0082f3359 44-45
+  s_cbb8dc8580692e::t_721acd13152f18 6,13-14,39,42-43,47-48
+src/assets/images/prime-logo-white.svg
+  s_cbb8dc8580692e::t_721acd13152f18 1
+src/home/components/home-banner/HomePageOverlay.tsx
+  s_cbb8dc8580692e::t_721acd13152f18 10-12,14
+src/App.tsx
+  s_cbb8dc8580692e::t_721acd13152f18 18,28
+  s_cbb8dc8580692e::t_7c9ebc13f1f1e3 20
+src/index.scss
+  s_cbb8dc8580692e::t_721acd13152f18 8
+src/assets/scss/_prime.scss
+  s_cbb8dc8580692e::t_9dcde47e0049af 3,11,19,60,68,97,102,182,234
+  s_cbb8dc8580692e::t_535cc0d0b2db6d 241
+  s_cbb8dc8580692e::t_ccb2a50f8c9b7b 1-2,4-10,12-18,20-59,61-67,69-96,98-101,103-119,132-135,140-143,155-181,183-203,209,215-233,235,246-251
+  s_cbb8dc8580692e::t_7c9ebc13f1f1e3 124-131
+  s_cbb8dc8580692e::t_21b72cc299105b 144-154
+  s_cbb8dc8580692e::t_f8dd95143ed592 120-123,136-139,204-208,210-214,236-240,242-245
+README.md
+  s_cbb8dc8580692e::t_2d8c91b6c5e37a 197-210
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "9bed127ce3d80c1688333787551f92d6e3b54df8",
+  "prompts": {},
+  "sessions": {
+    "s_cbb8dc8580692e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1188e-49b5-7711-bc8a-616e53a848a4",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Andrés González <andres@aulasneo.com>"
+    }
+  }
+}
